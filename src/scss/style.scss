@@ -1,0 +1,214 @@
+$bg-color:#000;
+$icon-size: 50px;
+$dark-overly: rgba(0,0,0,0.7);
+
+.navbar{
+  background-color: $bg-color;
+
+  .nav-item{
+    padding-left: 20px;
+  }
+}
+
+#slide{
+  .carousel-item-img1{
+    background: url('../img/image1.jpeg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .carousel-item-img2{
+    background: url('../img/image2.jpeg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .carousel-item-img3{
+    background: url('../img/image3.jpeg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .carousel-item{
+    min-height: 450px;
+  }
+
+}
+#getstart{
+  background: url('../img/pc.jpeg') no-repeat;
+  background-size: cover;
+  min-height: 250px;
+  position: relative;
+  background-attachment: fixed;
+
+  .overly-dark{
+    background-color: $dark-overly;
+    min-height: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+#youtube{
+  background: url('../img/people.jpeg') no-repeat;
+  background-size: cover;
+  min-height: 250px;
+  position: relative;
+  background-attachment: fixed;
+
+  .overly-dark{
+    background-color: $dark-overly;
+    min-height: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  span{
+    display: none;
+  }
+}
+#gallery{
+  img{
+    height: 250px;
+  }
+}
+#footer{
+  background-color: $bg-color;
+}
+#head{
+  background: url('../img/image2.jpeg') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#about-info{
+  img{
+    height: 350px;
+    width: 350px;
+  }
+}
+
+#testimonial{
+  .slick-prev:before{
+    color: $bg-color;
+  }
+  .slick-next:before{
+    color: $bg-color;
+  }
+}
+
+#service-head{
+  background: url('../img/image1.jpeg') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.fas, .fab{
+  font-size: $icon-size;
+}
+
+
+#plan{
+  .fas{
+    font-size: 1em;
+  }
+}
+#blog-head{
+  background: url('../img/image3.jpeg') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#post{
+  img{
+    height: 250px;
+  }
+}
+#contact-head{
+  background: url('../img/image1.jpeg') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media (max-width:767px){
+  .navbar{
+    .nav-item{
+      padding-left: 0px;
+    }
+  }
+  #getstart{
+    min-height: 300px;
+  }
+  #gallery{
+    img{
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+@media (max-width:480px){
+ #slide{
+   h2{
+     font-size: 2.5rem;
+   }
+   p{
+     font-size: 18px;
+   }
+ }
+
+  #getstart{
+    min-height: 350px;
+  }
+}
+@media (max-width:415px){
+ 
+  #getstart{
+    min-height: 370px;
+  }
+}
+@media (max-width:375px){
+ 
+  #slide{
+    h2{
+      font-size: 2.2rem;
+    }
+    p{
+      font-size: 17px;
+    }
+  }
+
+  #getstart{
+    min-height: 400px;
+    h3{
+      font-size: 1.5rem;
+    }
+    p{
+      font-size: 20px;
+    }
+  }
+}
+@media (max-width:330px){
+  
+  #slide{
+    h2{
+      font-size: 1.8rem;
+    }
+    p{
+      font-size: 15px;
+    }
+  }
+  #getstart{
+    min-height: 400px;
+    h3{
+      padding-top: 30px;
+      font-size: 1.3rem;
+    }
+    p{
+      font-size: 17px;
+    }
+  }
+  #youtube{
+    h3{
+      font-size: 1.3rem;
+    }
+  }
+}
